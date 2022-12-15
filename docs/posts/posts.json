@@ -1,19 +1,19 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to Fall 2022 Senior Project",
-    "description": "Welcome to our new blog, Fall 2022 Senior Project. We hope you enjoy \nreading what we have to say!",
+    "title": "Welcome to Gerard Causse's Senior Project - Fall 2022",
+    "description": "Welcome to my blog, Senior Project - Fall 2022. I hope you enjoy \nreading what I have to say!",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Gerard Causse",
+        "url": {}
       }
     ],
-    "date": "2022-12-15",
+    "date": "2022-12-13",
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-12-15T15:33:00-05:00",
-    "input_file": {}
+    "last_modified": "2022-12-15T16:29:42-05:00",
+    "input_file": "welcome.knit.md"
   }
 ]
