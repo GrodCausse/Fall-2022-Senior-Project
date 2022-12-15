@@ -3,7 +3,6 @@ title: "Fall 2022 Senior Project"
 site: distill::distill_website
 listing: 
   posts:
-    - welcome
     - 2022-12-13-introduction-and-background
     - 2022-12-13-simple-stress-calculators
     - 2022-12-13-cost-management-tool
