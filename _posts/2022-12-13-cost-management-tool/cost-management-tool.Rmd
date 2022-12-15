@@ -16,6 +16,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+#### Note: I was given permission to discuss this tool, but I cannot show too much off. As a result, I cannot show any images of this tool. Sorry for the inconvenience.
+
 This tool is near and dear to my heart, since it might be the project that got me my job. It was also probably the biggest single project I worked on in my time at EPRI. The idea behind this tool was simple, EPRI had contracted a company to make an Excel based tool for them that they could share with those who EPRI advises. This tool would allow a group to input the number of power plants they wanted to compare and the associated information on how often they have to start or stop their generators. These starts and stops are costly for a number of reasons, some as simple as when the generators aren’t running, they aren’t making money off of it, as well as more complicated reasons such as starting/stopping a generator is very stressful to the materials within that generator. 
 
 One of the important factors of this tool was the ability for users to inputs both how often they had started/stopped their generators, as well as plan out how often they would do it in the future. The tool would then plot graphs for the user based on these inputs and compare “historical” data (certain data from the past) to “scenario” data (hypothetical data for the future).
