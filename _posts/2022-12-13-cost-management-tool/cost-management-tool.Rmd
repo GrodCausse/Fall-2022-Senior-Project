@@ -1,0 +1,34 @@
+---
+title: "Cost Management Tool"
+description: |
+  A tool to allow users to estimate the costs of running generators based on hypothetical scenarios 
+author:
+  - name: Gerard Causse
+    url: https://example.com/norajones
+date: 2022-12-15
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This tool is near and dear to my heart, since it might be the project that got me my job. It was also probably the biggest single project I worked on in my time at EPRI. The idea behind this tool was simple, EPRI had contracted a company to make an Excel based tool for them that they could share with those who EPRI advises. This tool would allow a group to input the number of power plants they wanted to compare and the associated information on how often they have to start or stop their generators. These starts and stops are costly for a number of reasons, some as simple as when the generators aren’t running, they aren’t making money off of it, as well as more complicated reasons such as starting/stopping a generator is very stressful to the materials within that generator. 
+
+One of the important factors of this tool was the ability for users to inputs both how often they had started/stopped their generators, as well as plan out how often they would do it in the future. The tool would then plot graphs for the user based on these inputs and compare “historical” data (certain data from the past) to “scenario” data (hypothetical data for the future).
+
+However, one of the big problems with this approach was that updates would need to be made to the way the tool worked, and when you can only distribute an updated file occasionally it could be hard for everyone to use the most recent version of the tool. So EPRI decided to have me take a crack at recreating the tool as a web-based tool in Python using Streamlit. 
+
+However, because the tool wasn’t developed by EPRI, no one knew how it worked exactly in the backend, so my job was to dig into the Excel files and reverse engineering everything to get it working. While it might not be as glamourous as something like machine learning, the simple fact of the matter is that for most people, what data “looks like” is an Excel file, and so it’s important to be up to date on understanding how it works, as it comes in handy quite often when working with people less technical than ourselves. 
+
+But beyond that, the web-based tool was made, and it works well! I even added in some exclusive features, like allowing the user to compare various plots against each other at the same time, and they can even download a pdf report from the web based on their inputs.
+
+
+<!-- Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>. -->
+
+
