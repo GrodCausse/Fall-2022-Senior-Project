@@ -18,15 +18,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This toolset was designed for the Power Plant Piping group at EPRI, and the concept here is fairly simple. The tools developed here are used to predict how much stress pipes of various shapes will undergo based on user inputs. For example, a straight round pipe will undergo less structural stress than a pipe with a gentle curve when all else is equal. 
 
+![Simple Stress Tool Main Page](images/simple_stress_tool.png)
+
 The way the tool works if simple, the user clicks on the type of pipe they would like to perform a calculation for, and then the tool will prompt them with the appropriate inputs to fill out. The tool then performs a calculation based on the inputs, and will tell the user how much stress the pipe will undergo and to make sure the materials used can withstand it. If applicable, it will also tell the user where the weakest point is in the pipe (inside a bend, or at a joint location). 
+
+![Example Calculation: Elbow Pipe](images/bend_pipe.png)
 
 As for the calculations themselves, EPRI has spent a long time testing various pipes under various conditions and collecting data on when they break and how much pressure they can withstand. These calculations are the result of careful regressions performed on said data, and we plug in the variables into these regression equations. 
 
+![Example Calculation Pipe Spool](images/pipe_spool.png)
+
 Of course, as the name implies, this is a relatively simple tool and calculation, in the real world many factors go into these types of estimates, material quality and age, how long it’s been under stress, if this stress changes consistently, ect. But this tool allows engineers a quick and easy way to estimate what kind of materials they need, or if they need to rethink some plans. 
-
-
-<!-- Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>. -->
-
-

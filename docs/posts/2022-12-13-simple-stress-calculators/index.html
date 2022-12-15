@@ -119,7 +119,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["simple-stress-calculators_files/anchor-4.2.2/anchor.min.js","simple-stress-calculators_files/bowser-1.9.3/bowser.min.js","simple-stress-calculators_files/distill-2.2.21/template.v2.js","simple-stress-calculators_files/header-attrs-2.18/header-attrs.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.min.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.min.map","simple-stress-calculators_files/popper-2.6.0/popper.min.js","simple-stress-calculators_files/tippy-6.2.7/tippy-bundle.umd.min.js","simple-stress-calculators_files/tippy-6.2.7/tippy-light-border.css","simple-stress-calculators_files/tippy-6.2.7/tippy.css","simple-stress-calculators_files/tippy-6.2.7/tippy.umd.min.js","simple-stress-calculators_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["images/bend_pipe.PNG","images/pipe_spool.PNG","images/simple_stress_tool.PNG","simple-stress-calculators_files/anchor-4.2.2/anchor.min.js","simple-stress-calculators_files/bowser-1.9.3/bowser.min.js","simple-stress-calculators_files/distill-2.2.21/template.v2.js","simple-stress-calculators_files/header-attrs-2.18/header-attrs.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.min.js","simple-stress-calculators_files/jquery-3.6.0/jquery-3.6.0.min.map","simple-stress-calculators_files/popper-2.6.0/popper.min.js","simple-stress-calculators_files/tippy-6.2.7/tippy-bundle.umd.min.js","simple-stress-calculators_files/tippy-6.2.7/tippy-light-border.css","simple-stress-calculators_files/tippy-6.2.7/tippy.css","simple-stress-calculators_files/tippy-6.2.7/tippy.umd.min.js","simple-stress-calculators_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2140,12 +2140,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>This toolset was designed for the Power Plant Piping group at EPRI, and the concept here is fairly simple. The tools developed here are used to predict how much stress pipes of various shapes will undergo based on user inputs. For example, a straight round pipe will undergo less structural stress than a pipe with a gentle curve when all else is equal.</p>
+<figure>
+<img src="images/simple_stress_tool.PNG" alt="Simple Stress Tool Main Page" />
+<figcaption aria-hidden="true">Simple Stress Tool Main Page</figcaption>
+</figure>
 <p>The way the tool works if simple, the user clicks on the type of pipe they would like to perform a calculation for, and then the tool will prompt them with the appropriate inputs to fill out. The tool then performs a calculation based on the inputs, and will tell the user how much stress the pipe will undergo and to make sure the materials used can withstand it. If applicable, it will also tell the user where the weakest point is in the pipe (inside a bend, or at a joint location).</p>
+<figure>
+<img src="images/bend_pipe.PNG" alt="Example Calculation: Elbow Pipe" />
+<figcaption aria-hidden="true">Example Calculation: Elbow Pipe</figcaption>
+</figure>
 <p>As for the calculations themselves, EPRI has spent a long time testing various pipes under various conditions and collecting data on when they break and how much pressure they can withstand. These calculations are the result of careful regressions performed on said data, and we plug in the variables into these regression equations.</p>
+<figure>
+<img src="images/pipe_spool.PNG" alt="Example Calculation Pipe Spool" />
+<figcaption aria-hidden="true">Example Calculation Pipe Spool</figcaption>
+</figure>
 <p>Of course, as the name implies, this is a relatively simple tool and calculation, in the real world many factors go into these types of estimates, material quality and age, how long it’s been under stress, if this stress changes consistently, ect. But this tool allows engineers a quick and easy way to estimate what kind of materials they need, or if they need to rethink some plans.</p>
-<!-- Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>. -->
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
